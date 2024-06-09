@@ -1,11 +1,11 @@
 {
   "name": "lonerOrzの主页✨",
-  "favicon": "https://github.com/Loner-Orz/Drawing-Bed/blob/main/img/favicon.ico",
+  "favicon": "/favicon.ico",
   "domain": "https://remio-home-loner.vercel.app/",
   "keywords": "remio,rem,mio,C.C.,lonerOrz,lonerOrz的个人博客,个人主页,主页,个人记录,技术博客,个人生活",
   "description": "lonerOrz，兴趣至上，内容随缘，个人主页",
   "avatarConfig": {
-    "src": "https://github.com/Loner-Orz/Drawing-Bed/blob/main/img/avatar-512x512.png",
+    "src": "https://img1.dd.ci/file/423143986679e3d4450f9.png",
     "size": 128,
     "round": "full",
     "hoverAnimate": "top"
