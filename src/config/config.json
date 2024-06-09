@@ -1,11 +1,11 @@
 {
-  "name": "KASUIEの主页✨",
-  "favicon": "/favicon.ico",
-  "domain": "https://remio-home.vercel.app",
-  "keywords": "remio,rem,mio,C.C.,KASUIEの次元,KASUIE的个人博客,KASUIE,个人主页,主页,个人记录,技术博客,个人生活",
-  "description": "KASUIEの次元，兴趣至上，内容随缘，个人主页",
+  "name": "lonerOrzの主页✨",
+  "favicon": "https://github.com/Loner-Orz/Drawing-Bed/blob/main/img/favicon.ico",
+  "domain": "https://remio-home-loner.vercel.app/",
+  "keywords": "remio,rem,mio,C.C.,lonerOrz,lonerOrz的个人博客,个人主页,主页,个人记录,技术博客,个人生活",
+  "description": "lonerOrz，兴趣至上，内容随缘，个人主页",
   "avatarConfig": {
-    "src": "https://cdn.jsdelivr.net/gh/pixlips/picx-images-hosting@master/web/kasuie_new.5du9br5ow240.webp",
+    "src": "https://github.com/Loner-Orz/Drawing-Bed/blob/main/img/avatar-512x512.png",
     "size": 128,
     "round": "full",
     "hoverAnimate": "top"
@@ -13,7 +13,7 @@
   "bgConfig": {
     "bg": "",
     "mbg": "",
-    "bgStyle": "snow",
+    "bgStyle": "sakura",
     "blur": "",
     "cardOpacity": 0
   },
@@ -24,6 +24,7 @@
   },
   "subTitle": "https://v1.hitokoto.cn?c=a&c=b&c=c",
   "subTitleConfig": {
+    "heart": false,
     "typing": true,
     "loopTyping": true,
     "shadow": true,
@@ -34,8 +35,8 @@
     "autoAnimate": true
   },
   "footer": {
-    "text": "© 2020 - 2024 By KASUIE",
-    "url": "https://kasuie.cc",
+    "text": "© 2020 - 2024 By lonerOrz",
+    "url": "https://loner.lovewei.love/",
     "ICP": "ICP备xxxxxxxx号",
     "direction": "col-reverse",
     "isExternal": true
@@ -46,7 +47,7 @@
     {
       "title": "qq",
       "color": "#dfba00",
-      "url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=zIvBSvLDRr4MvqFSHcioDwS090ljUYHT&authKey=THHoVVpDZWHfnpZoNf57rDWzwrXmTWtnlN70ljCM6cG9eZ5KTIJcTxrvc7%2B7YdVI&noverify=0&group_code=793752494",
+      "url": "https://user.qzone.qq.com/2788892716/main",
       "icon": "qq"
     },
     {
@@ -58,31 +59,31 @@
     {
       "title": "github",
       "color": "#000000",
-      "url": "https://github.com/kasuie",
+      "url": "https://github.com/Loner-Orz",
       "icon": "github"
     },
     {
       "title": "twitter",
       "color": "#1da1f2",
-      "url": "https://twitter.com/kasuie3",
+      "url": "https://x.com/778_nanfeng",
       "icon": "twitter"
     },
     {
       "title": "email",
       "color": "#fd3232",
-      "url": "mailto:i@kasuie.cc",
+      "url": "2788892716@qq.com",
       "icon": "email"
     },
     {
       "title": "steam",
       "color": "#000000",
-      "url": "https://s.team/p/fhwd-fwbn/NWWVGPJV",
+      "url": "https://steamcommunity.com/profiles/76561198988612032/",
       "icon": "steam"
     },
     {
       "title": "bilibili",
       "color": "#0088cc",
-      "url": "https://space.bilibili.com/85447052",
+      "url": "https://space.bilibili.com/439989352",
       "icon": "bilibili"
     }
   ],
