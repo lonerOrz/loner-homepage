@@ -2,9 +2,10 @@
  * @Author: kasuie
  * @Date: 2024-05-31 13:22:52
  * @LastEditors: kasuie
- * @LastEditTime: 2024-06-07 17:50:19
+ * @LastEditTime: 2025-02-22 19:54:25
  * @Description:
  */
+import { HTMLAttributes } from "react";
 import { clsx } from "@kasuie/utils";
 import { Avatar } from "../ui/image/Avatar";
 import { getMotion } from "@/lib/motion";
@@ -21,8 +22,7 @@ import { TextEffect } from "../effect/TextEffect";
 import { SocialIcons } from "../social-icons/SocialIcons";
 import { Links } from "../links/Links";
 import { Sliders } from "../sliders/Sliders";
-
-interface VerticalProps {
+interface VerticalProps extends HTMLAttributes<HTMLDivElement> {
   gapSize: string;
   name: string;
   avatarConfig?: AvatarConfig;
@@ -37,7 +37,9 @@ interface VerticalProps {
   subTitle?: string;
   sliders?: SlidersConfig;
   cardOpacity?: number;
+  footers?: number;
 }
+
 export function Vertical({
   gapSize,
   name,
@@ -52,41 +54,37 @@ export function Vertical({
   primaryColor,
   subTitle,
   sliders,
-  cardOpacity = 0.1
+  cardOpacity = 0.1,
+  className,
+  footers = 0,
+  ...others
 }: VerticalProps) {
   return (
     <div
       className={clsx(
-        "flex w-full flex-col items-center justify-center pb-16",
+        "relative z-[1] flex w-full flex-col items-center justify-center pb-16",
         {
-          "gap-[30px] pt-[20vh]": gapSize == "md",
-          "gap-8 pt-[25vh]": gapSize == "sm",
+          "gap-8 pt-[20vh]": gapSize == "sm",
+          "gap-10 pt-[18vh]": gapSize == "md",
           "gap-12 pt-[15vh]": gapSize == "lg",
+          "!pb-20": footers > 2,
+          [`${className}`]: className,
         }
       )}
+      {...others}
     >
-      <Avatar
-        priority
-        isShowMotion
-        width={avatarConfig?.size || 128}
-        height={avatarConfig?.size || 128}
-        alt={name}
-        src={avatarConfig?.src || ""}
-        motions={getMotion(0.1, 0, 0, istTransition)}
-        warpClass={clsx(
-          "relative z-[1] transition-[top,transform] rotate-0 inline-block overflow-hidden cursor-pointer duration-500 top-0 ease-in-out animate-[light_4s_ease-in-out_infinite]",
-          {
-            "rounded-full": !avatarConfig?.round || avatarConfig?.round == "full",
-            "rounded-3xl": avatarConfig?.round == "3xl",
-            "rounded-xl": avatarConfig?.round == "xl",
-            "rounded-sm": avatarConfig?.round == "sm",
-            "rounded-md": avatarConfig?.round == "md",
-            "rounded-lg": avatarConfig?.round == "lg",
-            "hover:top-[-10px]": avatarConfig?.hoverAnimate == "top",
-            "hover:!rotate-[360deg] ": avatarConfig?.hoverAnimate == "rotate",
-          }
-        )}
-      />
+      {!avatarConfig?.hidden && (
+        <Avatar
+          priority
+          isShowMotion
+          alt={name}
+          src={avatarConfig?.src || ""}
+          motions={getMotion(0.1, 0, 0, istTransition)}
+          animateStyle={avatarConfig?.style}
+          {...avatarConfig}
+          style={""}
+        />
+      )}
       <TextEffect
         {...subTitleConfig}
         motions={getMotion(0.1, 1, 0.2, istTransition)}
@@ -97,17 +95,23 @@ export function Vertical({
         motions={getMotion(0.1, 2, 0.2, istTransition)}
         links={links}
       />
-      <Links
-        sitesConfig={sitesConfig}
-        motions={getMotion(0.1, 3, 0.2, istTransition)}
-        primaryColor={primaryColor}
-        staticSites={staticSites}
-        modalSites={modalSites}
-        cardOpacity={cardOpacity}
-      />
-      {
-        !sliders?.hidden && <Sliders motions={getMotion(0.1, 4, 0.2, istTransition)} cardOpacity={cardOpacity} {...sliders} />
-      }
+      {!sitesConfig?.hidden && (
+        <Links
+          sitesConfig={sitesConfig}
+          motions={getMotion(0.1, 3, 0.2, istTransition)}
+          primaryColor={primaryColor}
+          staticSites={staticSites}
+          modalSites={modalSites}
+          cardOpacity={cardOpacity}
+        />
+      )}
+      {!sliders?.hidden && (
+        <Sliders
+          motions={getMotion(0.1, 4, 0.2, istTransition)}
+          cardOpacity={cardOpacity}
+          {...sliders}
+        />
+      )}
     </div>
   );
 }

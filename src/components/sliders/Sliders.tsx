@@ -2,7 +2,7 @@
  * @Author: kasuie
  * @Date: 2024-06-04 14:53:15
  * @LastEditors: kasuie
- * @LastEditTime: 2024-06-06 11:25:12
+ * @LastEditTime: 2024-06-18 11:39:49
  * @Description:
  */
 "use client";
@@ -16,7 +16,6 @@ export const Sliders = ({
   data,
   color,
   title,
-  dotColor,
   cardOpacity,
   column = 2,
   motions = {},
@@ -29,21 +28,14 @@ export const Sliders = ({
   return (
     <motion.div
       style={{
-        backgroundColor: `rgba(var(--mio-main), ${cardOpacity})`
+        backgroundColor: `rgba(var(--mio-main), ${cardOpacity})`,
       }}
-      className="mb-8 w-[95vw] z-[1] rounded p-4 pb-8 shadow-mio-link backdrop-blur md:w-[65vw]"
+      className="z-[1] mb-8 w-[95vw] rounded p-4 pb-8 text-white/90 shadow-mio-link backdrop-blur md:w-[65vw]"
       {...motions}
     >
       {title && (
         <div className="mb-2 flex flex-nowrap items-center gap-2">
-          {dotColor && (
-            <span
-              className="ml-1 h-2 w-2 rounded-full"
-              style={{
-                background: dotColor,
-              }}
-            ></span>
-          )}
+            <span className="ml-1 h-2 w-2 rounded-full bg-[var(--primary-color)]"></span>
           <span className="text-sm">{title}</span>
         </div>
       )}

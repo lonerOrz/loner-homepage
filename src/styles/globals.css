@@ -13,13 +13,19 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.mio-hidden {
+  opacity: 0 !important;
+  transition: all ease-in-out 0.3s;
+  transform: translateY(10px) !important;
 }
 
 @keyframes light {

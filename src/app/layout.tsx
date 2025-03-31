@@ -2,19 +2,17 @@
  * @Author: kasuie
  * @Date: 2024-05-20 16:08:41
  * @LastEditors: kasuie
- * @LastEditTime: 2024-06-04 10:56:45
+ * @LastEditTime: 2024-11-28 21:01:15
  * @Description:
  */
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Layout } from "@/components/layout/Layout";
 import { AppProviders } from "@/providers";
 import { getConfig } from "@/lib/config";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import "@/styles/index.css";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/index.css";
+import StyleRegistry from "@/components/layout/StyleRegistry";
 
 export async function generateMetadata() {
   const appConfig = await getConfig("config.json");
@@ -29,6 +27,7 @@ export async function generateMetadata() {
       shortcut: "/icons/favicon192.png",
       apple: "/icons/favicon192.png",
     },
+    other: { "baidu-site-verification": process.env.BaiduSiteVerify || "" },
   } satisfies Metadata;
 }
 
@@ -37,11 +36,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const appConfig = await getConfig("config.json");
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <body className={`${inter.className} mio-scroll overflow-y-auto`}>
-        <AppProviders>
+      <body className={`mio-scroll mio-fonts overflow-y-auto`}>
+        <AppProviders appConfig={appConfig} ver={process.env.VERSION || ""}>
           <Layout>{children}</Layout>
+          <StyleRegistry />
         </AppProviders>
         {process.env.GTAGID && <GoogleAnalytics gaId={process.env.GTAGID} />}
         {process.env.GTMID && <GoogleTagManager gtmId={process.env.GTMID} />}

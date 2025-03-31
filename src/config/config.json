@@ -1,59 +1,73 @@
 {
   "name": "lonerOrzの主页✨",
   "favicon": "/favicon.ico",
-  "domain": "https://remio-home-loner.vercel.app/",
-  "keywords": "lonerOrz,lonerOrz的个人博客,个人主页,主页,个人记录,技术博客,个人生活",
-  "description": "lonerOrz，兴趣至上，内容随缘，个人主页",
+  "keywords": "lonerOrzの次元,lonerOrz的个人博客,lonerOrz,个人主页,主页,个人记录,技术博客,个人生活",
+  "description": "lonerOrz站点导航，个人主页",
   "avatarConfig": {
     "src": "https://img1.dd.ci/file/423143986679e3d4450f9.png",
-    "size": 128,
+    "size": 150,
     "round": "full",
-    "hoverAnimate": "top"
+    "style": "wave",
+    "hoverAnimate": "top",
+    "hidden": false,
+    "aloneRight": false
   },
   "bgConfig": {
-    "bg": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD49n6ifKoNj6NhGO81dE_JaFajp6aQACFAQAAhEhUUfzxMFMloPtqzYE",
-    "mbg": "",
-    "bgStyle": "sakura",
-    "blur": "none",
-    "cardOpacity": 0
+    "bg": [
+      "https://s2.loli.net/2024/06/21/euQ48saP7UgMyDr.webp"
+    ],
+    "mbg": [
+      "https://s2.loli.net/2024/06/21/59b6eRscAvQWHT1.webp"
+    ],
+    "bgStyle": "snow",
+    "blur": "",
+    "cardOpacity": 0.1,
+    "carousel": true,
+    "carouselGap": 5,
+    "transitionTime": 0.7,
+    "transitionStyle": "default",
+    "autoAnimate": false
+  },
+  "globalStyle": {
+    "primaryColor": "#0dbf56",
+    "theme": "switcher",
+    "weather": true
   },
   "layoutConfig": {
-    "istTransition": true,
     "gapSize": "lg",
-    "style": ""
+    "style": "",
+    "istTransition": true
   },
   "subTitle": "https://v1.hitokoto.cn?c=a&c=b&c=c",
   "subTitleConfig": {
-    "heart": false,
     "typing": true,
+    "loading": "wave",
     "loopTyping": true,
-    "shadow": true,
+    "shadow": false,
     "typingCursor": true,
-    "showFrom": true
+    "showFrom": true,
+    "style": "desc",
+    "gapDelay": 0.05,
+    "content": "Hello💫，这里是lonerOrzの主页",
+    "desc": "已经毕业快两年半了，是一个linux爱好者，主要捣鼓一些有趣的配置，好耶！🥰"
   },
-  "socialConfig": {
-    "autoAnimate": true
-  },
-  "footer": {
-    "text": "© 2020 - 2024 By lonerOrz",
-    "url": "https://loner.lovewei.love/",
-    "ICP": "ICP备xxxxxxxx号",
-    "direction": "col-reverse",
-    "isExternal": true
-  },
-  "primaryColor": "#229fff",
-  "theme": "switcher",
   "links": [
+    {
+      "title": "qq",
+      "color": "#dfba00",
+      "url": "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=zIvBSvLDRr4MvqFSHcioDwS090ljUYHT&authKey=THHoVVpDZWHfnpZoNf57rDWzwrXmTWtnlN70ljCM6cG9eZ5KTIJcTxrvc7%2B7YdVI&noverify=0&group_code=793752494",
+      "icon": "qq"
+    },
     {
       "title": "telegram",
       "color": "#1da1f2",
-      "url": "https://t.me/PixivLips",
+      "url": "https://t.me/LonerOrz",
       "icon": "telegram"
     },
     {
       "title": "github",
       "color": "#000000",
-      "url": "https://github.com/Loner-Orz",
+      "url": "https://github.com/lonerOrz",
       "icon": "github"
     },
     {
@@ -61,6 +75,12 @@
       "color": "#1da1f2",
       "url": "https://x.com/778_nanfeng",
       "icon": "twitter"
+    },
+    {
+      "title": "email",
+      "color": "#fd3232",
+      "url": "mailto:i@kasuie.cc",
+      "icon": "email"
     },
     {
       "title": "steam",
@@ -77,91 +97,105 @@
   ],
   "sites": [
     {
-      "icon": "",
+      "icon": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD5xn6jqpQDm0LscdXoVwcHh4GCC5RAACIwQAAhEhUUdWZEfz9V0AAfo2BA",
       "title": "lonerOrzの次元",
       "url": "https://loner.lovewei.love/",
       "desc": "博客主页"
     },
     {
-      "icon": "",
-      "title": "lonerOrzのAI",
-      "url": "https://chat-gpt-web-lake-eight.vercel.app/",
-      "desc": "ChatGPT"
-    },
-    {
-      "icon": "",
+      "icon": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD5hn6jlLgwd9NIdrT7qa7JqA_5htnQACIAQAAhEhUUd4L2evIexFODYE",
       "title": "lonerOrzの工具箱",
       "url": "https://it-tools-self-nine.vercel.app/",
       "desc": "It-tools"
     },
     {
-      "icon": "",
-      "title": "图床の导航",
-      "url": "https://iui.su/pic.html",
-      "desc": "图床服务"
-    },
-    {
-      "icon": "",
+      "icon": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD5pn6joKqLpkV0ndSPL_HzOirh96IgACIgQAAhEhUUf_GG8t_S_IcDYE",
       "title": "lonerOrzの手写板",
       "url": "https://excalidraw-cn-eosin.vercel.app/",
       "desc": "Excalidraw"
     },
     {
-      "icon": "",
+      "icon": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD5tn6jqOtGE-o4C4NRl7v1y-YW6AugACjAcAAtaVWUfG-qqdJIZbuTYE",
       "title": "oldBlog",
       "url": "https://lonerorz.serv00.net/",
       "desc": "早期博客"
     }
   ],
   "sitesConfig": {
-    "cardStyle": "flip",
+    "hidden": false,
+    "cardStyle": "",
     "hoverBlur": true,
     "hoverScale": true,
     "hoverFlip": true,
     "direction": "row",
     "modal": true,
-    "modalTips": "这里大多都是初学时开发的，技术力不高，看起来也很不好看，算是黑历史，但也算是一段记忆的载体了，所以我想把它保存在此。",
-    "modalTitle": "more"
+    "modalTips": "这里大多都是初学时开发的，算是练手的，技术力不高，看起来也很不好看，算是黑历史，但也算是一段记忆的载体了，所以我想把它保存在此。",
+    "modalTitle": ""
+  },
+  "socialConfig": {
+    "autoAnimate": true,
+    "loading": "wave",
+    "ripple": true
   },
   "sliders": {
     "data": [
       {
-        "title": "python",
-        "value": 50
-      },
-      {
-        "title": "spring cloud",
-        "value": 50
+        "title": "JavaScript/TypeScript",
+        "value": 70,
+        "icon": "qq"
       },
       {
         "title": "golang",
-        "value": 60
+        "value": 60,
+        "icon": "qq"
       },
       {
-        "title": "JavaScript/TypeScript",
-        "value": 50
+        "title": "Vue",
+        "value": 60,
+        "icon": "qq"
+      },
+      {
+        "title": "Python",
+        "value": 70
       },
       {
         "title": "kubernetes",
-        "value": 50
-      },
-      {
-        "title": "Linux",
         "value": 60
       },
       {
+        "title": "Spring Cloud",
+        "value": 60
+      },
+      {
+        "title": "Linux",
+        "value": 80
+      },
+      {
         "title": "Mysql",
-        "value": 55
+        "value": 60
       },
       {
         "title": "Docker",
-        "value": 70
+        "value": 60
       }
     ],
     "title": "技能加点",
     "color": "linear-gradient(to right, #ffafbd 0%, #c9ffbf 100%)",
     "hidden": false,
-    "dotColor": "#18c964",
     "column": 4
-  }
+  },
+  "footer": {
+    "text": "© 2020 - 2025 By KASUIE",
+    "url": "https://kasuie.cc",
+    "ICP": "ICP备xxxxxxxx号",
+    "MPSICP": "京公网安备xxxxxxxx号",
+    "direction": "col-reverse",
+    "isExternal": true
+  },
+  "resources": {
+    "css": [],
+    "js": [],
+    "bodyHtml": ""
+  },
+  "domain": "https://remio-home-loner.vercel.app"
 }
