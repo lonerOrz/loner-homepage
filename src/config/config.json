@@ -2,7 +2,7 @@
   "name": "lonerOrzの主页✨",
   "favicon": "/favicon.ico",
   "domain": "https://remio-home-loner.vercel.app/",
-  "keywords": "remio,rem,mio,C.C.,lonerOrz,lonerOrz的个人博客,个人主页,主页,个人记录,技术博客,个人生活",
+  "keywords": "lonerOrz,lonerOrz的个人博客,个人主页,主页,个人记录,技术博客,个人生活",
   "description": "lonerOrz，兴趣至上，内容随缘，个人主页",
   "avatarConfig": {
     "src": "https://img1.dd.ci/file/423143986679e3d4450f9.png",
@@ -11,10 +11,10 @@
     "hoverAnimate": "top"
   },
   "bgConfig": {
-    "bg": "",
+    "bg": "https://img1.s1.googlevideo.xyz/d/BQACAgEAAx0EbsCs4QACD49n6ifKoNj6NhGO81dE_JaFajp6aQACFAQAAhEhUUfzxMFMloPtqzYE",
     "mbg": "",
     "bgStyle": "sakura",
-    "blur": "",
+    "blur": "none",
     "cardOpacity": 0
   },
   "layoutConfig": {
@@ -45,12 +45,6 @@
   "theme": "switcher",
   "links": [
     {
-      "title": "qq",
-      "color": "#dfba00",
-      "url": "https://user.qzone.qq.com/2788892716/main",
-      "icon": "qq"
-    },
-    {
       "title": "telegram",
       "color": "#1da1f2",
       "url": "https://t.me/PixivLips",
@@ -69,12 +63,6 @@
       "icon": "twitter"
     },
     {
-      "title": "email",
-      "color": "#fd3232",
-      "url": "2788892716@qq.com",
-      "icon": "email"
-    },
-    {
       "title": "steam",
       "color": "#000000",
       "url": "https://steamcommunity.com/profiles/76561198988612032/",
@@ -89,43 +77,37 @@
   ],
   "sites": [
     {
-      "icon": "https://cs.kasuie.cc/icons/d5570e8a-a826-47be-91b2-f6949b743111.webp!cover",
+      "icon": "",
       "title": "lonerOrzの次元",
       "url": "https://loner.lovewei.love/",
       "desc": "博客主页"
     },
     {
-      "icon": "https://cs.kasuie.cc/icons/1419ac35-0a57-4359-bb2f-55a26fc52bd8.png!cover",
-      "title": "Mio 导航",
-      "url": "https://nav.kasuie.cc",
-      "desc": "Mio 网站导航"
-    },
-    {
-      "icon": "https://cs.kasuie.cc/icons/a8cb45a8-c0ec-41e7-ab8f-ff4fe8817230.jpg!cover",
+      "icon": "",
       "title": "lonerOrzのAI",
       "url": "https://chat-gpt-web-lake-eight.vercel.app/",
       "desc": "ChatGPT"
     },
     {
-      "icon": "https://cs.kasuie.cc/icons/1419ac35-0a57-4359-bb2f-55a26fc52bd8.png!cover",
+      "icon": "",
       "title": "lonerOrzの工具箱",
       "url": "https://it-tools-self-nine.vercel.app/",
       "desc": "It-tools"
     },
     {
-      "icon": "https://cs.kasuie.cc/icons/0d2e7fe7-3cca-4989-9bb4-4a39cee77801.png!cover",
+      "icon": "",
       "title": "图床の导航",
       "url": "https://iui.su/pic.html",
       "desc": "图床服务"
     },
     {
-      "icon": "https://cs.kasuie.cc/icons/d5570e8a-a826-47be-91b2-f6949b743111.webp!cover",
+      "icon": "",
       "title": "lonerOrzの手写板",
       "url": "https://excalidraw-cn-eosin.vercel.app/",
       "desc": "Excalidraw"
     },
     {
-      "icon": "https://cs.kasuie.cc/icons/1419ac35-0a57-4359-bb2f-55a26fc52bd8.png!cover",
+      "icon": "",
       "title": "oldBlog",
       "url": "https://lonerorz.serv00.net/",
       "desc": "早期博客"
@@ -145,47 +127,23 @@
     "data": [
       {
         "title": "python",
-        "value": 30,
-        "icon": "qq"
+        "value": 50
       },
       {
         "title": "spring cloud",
-        "value": 50,
-        "icon": "qq"
+        "value": 50
       },
       {
         "title": "golang",
-        "value": 60,
-        "icon": "qq"
-      },
-      {
-        "title": "Vue",
-        "value": 50,
-        "icon": "qq"
-      },
-      {
-        "title": "Nginx",
-        "value": 70
+        "value": 60
       },
       {
         "title": "JavaScript/TypeScript",
-        "value": 30
+        "value": 50
       },
       {
         "title": "kubernetes",
         "value": 50
-      },
-      {
-        "title": "Rag&Agent",
-        "value": 40
-      },
-      {
-        "title": "Stable Diffusion",
-        "value": 60
-      },
-      {
-        "title": "Spring Boot",
-        "value": 80
       },
       {
         "title": "Linux",
@@ -197,7 +155,7 @@
       },
       {
         "title": "Docker",
-        "value": 45
+        "value": 70
       }
     ],
     "title": "技能加点",
