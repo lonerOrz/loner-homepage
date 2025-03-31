@@ -3,7 +3,7 @@
 
 > 注意，在线编辑仅支持`docker`部署，vercel部署没办法持久化配置文件，所以每一次重新部署，都会重置配置。
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lonerOrz/remio-home-loner&env=PASSWORD&project-name=loner-homepage&repository-name=loner-homepage)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lonerOrz/loner-homepage&env=PASSWORD&project-name=loner-homepage&repository-name=loner-homepage)
 
 点击上方按钮即可，填写必要的环境变量，点击创建完成后，回到自己创建的仓库里，按需修改 `/src/config/config.json` 文件即可。
 
